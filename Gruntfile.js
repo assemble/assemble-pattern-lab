@@ -42,7 +42,6 @@ module.exports = function(grunt) {
       },
 
       site: {
-        options: {layout: 'none'},
         src: ['<%= site.pages %>/*.hbs', 'src/*.hbs'],
         dest: '<%= site.dest %>/'
       },

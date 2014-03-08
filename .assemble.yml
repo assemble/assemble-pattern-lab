@@ -8,8 +8,9 @@ title:          "Assemble &raquo; Pattern Lab"
 # DEST CONFIG
 # =============================================
 
-dest:           _gh_pages
-assets:         <%= site.dest %>/public
+base:           _gh_pages
+dest:           <%= site.base %>
+assets:         <%= site.base %>/public
 
 # =============================================
 # SOURCE CONFIG

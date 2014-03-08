@@ -27,10 +27,11 @@
   "devDependencies": {
     "grunt-contrib-clean": "~0.5.0",
     "assemble": "~0.4.36",
-    "assemble-contrib-permalinks": "~0.3.4"
+    "assemble-contrib-permalinks": "~0.3.4",
+    "handlebars-helper-rel": "~0.1.2"
   },
   "keywords": [
-    "pattern-lab",
+    "handlebars-helper-rel",
     "pattern lab",
     "patterns",
     "components",
