@@ -26,7 +26,7 @@ module.exports.register = function (Handlebars, options, params) {
     });
 
     Handlebars.registerHelper(pattern, function(name, context) {
-      context = _.extend(config, context || {});
+      context = _.extend(config, this, context || {});
       var template = Handlebars.partials[pattern + '-' + name];
       var fn = Handlebars.compile(template);
       return new Handlebars.SafeString(fn(context));
