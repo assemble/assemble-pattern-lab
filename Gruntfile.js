@@ -29,6 +29,7 @@ module.exports = function(grunt) {
         plugins: '<%= site.plugins %>',
 
         // Templates
+        partials: ['<%= site.includes %>/**/*.hbs'],
         layouts: '<%= site.layouts %>',
         layout: '<%= site.layout %>',
 

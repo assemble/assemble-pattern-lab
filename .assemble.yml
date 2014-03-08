@@ -1,4 +1,10 @@
 # =============================================
+# PROJECT METADATA
+# =============================================
+
+title:          "Assemble &raquo; Pattern Lab"
+
+# =============================================
 # DEST CONFIG
 # =============================================
 
@@ -14,7 +20,8 @@ data:           data
 
 # Templates
 structure:      patterns
-layouts:        src/_layouts
+includes:       src/includes
+layouts:        src/layouts
 layout:         default.hbs
 
 atoms:          <%= site.structure %>/atoms
