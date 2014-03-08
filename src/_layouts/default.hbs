@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Pattern Lab Pattern</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" />
+
+    <!-- Styleguide CSS -->
+    <link rel="stylesheet" href="{{assets}}/css/styleguide.css" media="all">
+    <link rel="stylesheet" href="{{assets}}/css/style.css" media="all" />
+
+    <style> .has-comment, .has-comment a {cursor: help !important; } </style>
+  </head>
+  <body class="sg-single-pattern">
+
+    {{> body}}
+
+    <script type="text/html" id="sg-pattern-html"> {{ patternHTML }} </script>
+    <script type="text/html" id="sg-pattern-css"> {{ patternCSS }} </script>
+
+    <script src="{{assets}}/js/postmessage.js"></script>
+    <script src="{{assets}}/js/annotations.js"></script>
+    <script src="{{assets}}/js/annotations-pattern.js"></script>
+    <script src="{{assets}}/js/code-pattern.js"></script>
+  </body>
+</html>

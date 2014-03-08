@@ -1,0 +1,24 @@
+<div class="page" id="page">
+	{{ organism 'header' }}
+	<div role="main">
+		<div class="l-two-col">
+			<div class="l-main">
+				<article class="article">
+					<header class="article-header">
+						<h1>Article Headline Lorem ipsum dolor sit aweofij</h1>
+						{{ molecule byline-author-time }}
+					</header>
+					{{ organism 'article-body' }}
+				</article><!--end .article-->
+				{{ molecule 'social-share' }}
+				{{ organism 'comment-thread' }}
+			</div><!--end l-main-->
+
+			<div class="l-sidebar">
+				{{ organism 'related-posts' }}
+				{{ organism 'recent-tweets' }}
+			</div><!--end l-sidebar-->
+		</div><!--end l-two-col-->
+	</div><!--End role=main-->
+	{{ organism 'footer' }}
+</div>

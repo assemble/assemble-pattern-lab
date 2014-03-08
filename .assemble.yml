@@ -1,0 +1,29 @@
+# =============================================
+# DEST CONFIG
+# =============================================
+
+dest:           _gh_pages
+assets:         <%= site.dest %>/public
+
+# =============================================
+# SOURCE CONFIG
+# =============================================
+
+# Data
+data:           data
+
+# Templates
+structure:      patterns
+layouts:        src/_layouts
+layout:         default.hbs
+
+atoms:          <%= site.structure %>/atoms
+molecules:      <%= site.structure %>/molecules
+organisms:      <%= site.structure %>/organisms
+templates:      <%= site.structure %>/templates
+pages:          <%= site.structure %>/pages
+
+# Extensions
+helpers:        <%= site.structure %>/_helpers
+plugins:
+  - assemble-contrib-permalinks
