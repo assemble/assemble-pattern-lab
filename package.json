@@ -1,6 +1,6 @@
 {
   "name": "assemble-pattern-lab",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "An easier-to-use and more extensible build system for pattern-lab.",
   "homepage": "https://github.com/assemble/assemble-pattern-lab",
   "author": {
@@ -25,10 +25,12 @@
     "url": "https://github.com/assemble/assemble-pattern-lab/issues"
   },
   "devDependencies": {
-    "assemble": "~0.4.36",
+    "assemble": "~0.4.37",
     "assemble-contrib-permalinks": "~0.3.6",
+    "fs-utils": "~0.3.6",
     "grunt-contrib-clean": "~0.5.0",
-    "handlebars-helper-rel": "~0.1.2"
+    "handlebars-helper-rel": "~0.1.2",
+    "lodash": "~2.4.1"
   },
   "keywords": [
     "atoms",
