@@ -20,18 +20,27 @@ assets:         <%= site.base %>/public
 data:           data
 
 # Templates
-structure:      patterns
-includes:       src/includes
-layouts:        src/layouts
-layout:         default.hbs
-
-atoms:          <%= site.structure %>/atoms
-molecules:      <%= site.structure %>/molecules
-organisms:      <%= site.structure %>/organisms
-templates:      <%= site.structure %>/templates
-pages:          <%= site.structure %>/pages
+structure:      templates
+includes:       <%= site.structure %>/includes
+layouts:        <%= site.structure %>/layouts
+layout:         default
+layoutext:      .hbs
 
 # Extensions
-helpers:        <%= site.structure %>/_helpers
+helpers:
+- <%= site.structure %>/_helpers
+
 plugins:
-  - assemble-contrib-permalinks
+- assemble-contrib-permalinks
+
+
+# =============================================
+# PATTERN LAB TEMPLATES
+# =============================================
+
+patterns:       patterns
+atoms:          <%= site.patterns %>/atoms
+molecules:      <%= site.patterns %>/molecules
+organisms:      <%= site.patterns %>/organisms
+templates:      <%= site.patterns %>/templates
+pages:          <%= site.patterns %>/pages

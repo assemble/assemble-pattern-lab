@@ -15,6 +15,8 @@ module.exports = function(grunt) {
 
     // Project metadata
     pkg: grunt.file.readJSON('package.json'),
+
+    // <%= site %> metadata comes from this file
 		site: grunt.file.readYAML('.assemble.yml'),
 
     assemble: {
@@ -23,6 +25,7 @@ module.exports = function(grunt) {
         assets: '<%= site.assets %>',
 
         // Metadata
+        pkg: '<%= pkg %>',
         site: '<%= site %>',
         data: ['<%= site.data %>/**/*.json'],
         helpers: ['<%= site.helpers %>/*.js'],
@@ -31,6 +34,7 @@ module.exports = function(grunt) {
         // Templates
         partials: ['<%= site.includes %>/**/*.hbs'],
         layouts: '<%= site.layouts %>',
+        layoutext: '<%= site.layoutext %>',
         layout: '<%= site.layout %>',
 
         // Pattern Lab templates
@@ -49,10 +53,25 @@ module.exports = function(grunt) {
       patterns: {
         options: {
           permalinks: {
-            structure: ':00-:basename.:ext'
+            preset: 'pretty',
+            structure: ':pattern-:group',
+            patterns: [
+              {
+                pattern: /:pattern/,
+                replacement: function(src) {
+                  return this.src.split('/')[1];
+                }
+              },
+              {
+                pattern: /:group/,
+                replacement: function(src) {
+                  return this.src.split('/')[2];
+                }
+              }
+            ]
           }
         },
-        src: ['patterns/**/*.hbs'],
+        src: ['<%= site.patterns %>/**/*.hbs'],
         dest: '<%= site.dest %>/patterns/'
       }
     },

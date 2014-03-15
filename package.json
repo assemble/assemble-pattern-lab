@@ -1,8 +1,8 @@
 {
   "name": "assemble-pattern-lab",
   "version": "0.1.0",
-  "description": "A cleaner, easier-to-use, more organized, more powerful, and infinitely extensible build system for pattern-lab.",
-  "homepage": "https://github.com/assemble/assemble",
+  "description": "An easier-to-use and more extensible build system for pattern-lab.",
+  "homepage": "https://github.com/assemble/assemble-pattern-lab",
   "author": {
     "name": "Jon Schlinkert",
     "url": "https://github.com/jonschlinkert"
@@ -10,7 +10,7 @@
   "licenses": [
     {
       "type": "MIT",
-      "url": "https://github.com/sellside/assemble-pattern-lab/blob/master/LICENSE-MIT"
+      "url": "https://github.com/assemble/assemble-pattern-lab/blob/master/LICENSE-MIT"
     },
     {
       "type": "Creative Commons Attribution 3.0 Unported License",
@@ -19,22 +19,29 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/sellside/assemble-pattern-lab"
+    "url": "https://github.com/assemble/assemble-pattern-lab.git"
   },
   "bugs": {
-    "url": "https://github.com/sellside/assemble-pattern-lab/issues"
+    "url": "https://github.com/assemble/assemble-pattern-lab/issues"
   },
   "devDependencies": {
-    "grunt-contrib-clean": "~0.5.0",
     "assemble": "~0.4.36",
-    "assemble-contrib-permalinks": "~0.3.4",
+    "assemble-contrib-permalinks": "~0.3.6",
+    "grunt-contrib-clean": "~0.5.0",
     "handlebars-helper-rel": "~0.1.2"
   },
   "keywords": [
-    "handlebars-helper-rel",
-    "pattern lab",
-    "patterns",
+    "atoms",
     "components",
+    "handlebars-helper-rel",
+    "layouts",
+    "molecules",
+    "organisms",
+    "pages",
+    "pattern lab",
+    "pattern-lab",
+    "patterns",
+    "templates",
     "UI"
   ]
 }
