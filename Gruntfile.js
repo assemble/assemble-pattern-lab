@@ -10,14 +10,14 @@ module.exports = function(grunt) {
 
   'use strict';
 
-	// Project configuration.
-	grunt.initConfig({
+  // Project configuration.
+  grunt.initConfig({
 
     // Project metadata
     pkg: grunt.file.readJSON('package.json'),
 
     // <%= site %> metadata comes from this file
-		site: grunt.file.readYAML('.assemble.yml'),
+    site: grunt.file.readYAML('.assemble.yml'),
 
     assemble: {
       options: {
@@ -31,7 +31,7 @@ module.exports = function(grunt) {
         helpers: ['<%= site.helpers %>/*.js'],
         plugins: '<%= site.plugins %>',
 
-        // Templates
+        // General templates
         partials: ['<%= site.includes %>/**/*.hbs'],
         layouts: '<%= site.layouts %>',
         layoutext: '<%= site.layoutext %>',
@@ -42,9 +42,11 @@ module.exports = function(grunt) {
           atoms: ['<%= site.atoms %>/**/*.hbs'],
           molecules: ['<%= site.molecules %>/**/*.hbs'],
           organisms: ['<%= site.organisms %>/**/*.hbs'],
+          templates: ['<%= site.templates %>/**/*.hbs'],
         }
       },
 
+      // 'pages' are specified in the src
       site: {
         src: ['<%= site.pages %>/*.hbs', 'src/*.hbs'],
         dest: '<%= site.dest %>/'
@@ -79,11 +81,11 @@ module.exports = function(grunt) {
     clean: {
       examples: ['<%= assemble.examples.dest %>/**']
     }
-	});
+  });
 
-	// Load Assemble
-	grunt.task.loadNpmTasks('assemble');
+  // Load Assemble
+  grunt.task.loadNpmTasks('assemble');
 
   // The default task to run with the `grunt` command
-	grunt.registerTask('default', ['assemble']);
+  grunt.registerTask('default', ['assemble']);
 };

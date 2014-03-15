@@ -1,0 +1,1 @@
+All contributions are welcome! The simplest way to show your support for this project is to _"star" it_.

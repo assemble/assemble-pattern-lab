@@ -7,7 +7,7 @@ First things first:
 
 ## Install dependencies
 
-Now we need to install the necessary dependencies to build the project, including Assemble and Grunt:
+Next install the necessary dependencies to build the project, including Assemble and Grunt:
 
 ```bash
 npm i
@@ -15,7 +15,7 @@ npm i
 
 ## Build
 
-You should now be able to build the project by running:
+With everything downloaded and installed, you should now be able to build the project by running:
 
 ```bash
 grunt

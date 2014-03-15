@@ -14,7 +14,7 @@ module.exports.register = function (Handlebars, options, params) {
   options = options || {};
   var config = _.extend(options, options.data || {});
 
-  var patterns = ['atom', 'molecule', 'organism'];
+  var patterns = ['atom', 'molecule', 'organism', 'template'];
 
   patterns.forEach(function(pattern) {
     var inflection = pattern + 's';

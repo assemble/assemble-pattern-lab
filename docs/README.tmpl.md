@@ -2,14 +2,19 @@
 
 > {%= description %}
 
+{%= docs('overview') %}
+
 ## Getting Started
 {%= docs('install') %}
 
+## Usage
+{%= docs("usage") %}
+
 ## Contributing
-{%= contrib("contributing") %}
+{%= docs("contributing") %}
 
 ## Authors
-{%= contrib("authors") %}
+{%= contrib("jon") %}
 
 ## License
 {%= copyright() %}
