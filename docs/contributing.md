@@ -1,1 +1,3 @@
-All contributions are welcome! The simplest way to show your support for this project is to _"star" it_.
+All contributions are welcome! If you like the project, _stars and tweets_ are a great way to show your support. If you want to take a more active role and help with documentation, writing unit tests, addressing issues or whatever seems interesting, please let us know, we'd be happy to help you get started!
+
+Also, we use [Verb](https://github.com/assemble/verb) for documentation, so don't edit the readme or other docs directly. Please edit the templates in the [docs directory](./docs) and then run `verb` to build them before you do a pull request. Thanks!
